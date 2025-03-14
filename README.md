@@ -21,10 +21,10 @@ This project sets up a Python environment with all of the ML tools needed to ana
 * **Conda** for environment setup and reproducibility  
 * **Jupyter** for interactive development and testing  
 * **pandas** and **numpy** for data manipulation and analysis  
-* **matplotlib** and **seaborn** for data visualization  
-* **scikit-learn** for clustering and other machine learning tasks  
+* **matplotlib** and **seaborn** for data visualization    
 * **langdetect** for language detection  
-* **spaCy** for natural language processing
+* **Helsinki-NLP** for language translation
+* **scikit-learn** for clustering and other machine learning tasks
 
 ## Installation
 
