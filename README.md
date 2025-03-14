@@ -31,11 +31,13 @@ This project sets up a Python environment with all of the ML tools needed to ana
 1. **Install Conda.**
 2. **Clone this repo.**
 3. **Create the environment by running:**  
-   `conda env create -f environment.yml`
-4. **Run `test.ipynb` to confirm everything is working.**
-
-**Note:** Install an English language model for spaCy first by running:  
-`python -m spacy download en_core_web_sm`
+   `conda env create --file=environment.yml`
+4. **Activate your new environment:**
+   `conda activate nlp-clustering-prototype`
+5. **NOTE:** If using VS Code, you may need to restart it before the new environment is available
+6. **Install an English language model for spaCy first by running:**
+   `python -m spacy download en_core_web_sm`
+6. **Run `test.ipynb` to confirm everything is working.**
 
 ## To-do
 
