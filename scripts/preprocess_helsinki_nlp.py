@@ -10,11 +10,8 @@ unique_langs = [lang for lang in df['language'].unique() if lang not in ['en', '
 print("Detected non-English languages:", unique_langs)
 
 def get_helsinki_translation_pipeline(lang):
-    """
-    Construct the model name for Helsinki-NLP for a given language code and load
-    the translation pipeline to translate from that language to English.
-    """
-    # The convention for Helsinki models: e.g., for Korean ('ko'): "Helsinki-NLP/opus-mt-ko-en"
+
+    # Use language code to get appropriate Helsinki model
     model_name = f"Helsinki-NLP/opus-mt-{lang}-en"
     try:
         # The translation pipeline will automatically download the model if necessary.
