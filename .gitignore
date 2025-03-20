@@ -1,3 +1,4 @@
 data/raw/raw_data.csv
 data/processed/cleaned_data_example.csv
 data/processed/langdetect_data_example.csv
+data/processed/translated_data_example.csv
