@@ -1,20 +1,29 @@
-[![Python](https://img.shields.io/badge/Python-3.12.8-blue.svg)](https://www.python.org/downloads/)
-[![Conda](https://img.shields.io/badge/Conda-Miniconda-green.svg)](https://docs.conda.io/en/latest/miniconda.html)
-[![Jupyter](https://img.shields.io/badge/Jupyter-1.1.1-orange.svg)](https://jupyter.org)
-[![pandas](https://img.shields.io/badge/pandas-2.2.3-blue.svg)](https://pandas.pydata.org)
-[![numpy](https://img.shields.io/badge/numpy-2.2.2-blue.svg)](https://numpy.org)
-[![matplotlib](https://img.shields.io/badge/matplotlib-3.10.0-blue.svg)](https://matplotlib.org)
-[![seaborn](https://img.shields.io/badge/seaborn-0.13.2-orange.svg)](https://seaborn.pydata.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-green.svg)](https://scikit-learn.org)
-[![spaCy](https://img.shields.io/badge/spaCy-3.8.4-blue.svg)](https://spacy.io)
-[![langdetect](https://img.shields.io/badge/langdetect-1.0.9-lightgrey.svg)](https://pypi.org/project/langdetect/)
-[![sentence-transformers](https://img.shields.io/badge/sentence--transformers-3.4.1-blueviolet.svg)](https://www.sbert.net)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Conda](https://img.shields.io/badge/Conda-environment-green.svg)](https://docs.conda.io/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![pandas](https://img.shields.io/badge/pandas-%3E%3D1.0-blue.svg)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-%3E%3D1.18-blue.svg)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-%3E%3D3.0-blue.svg)](https://matplotlib.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-%3E%3D0.24-green.svg)](https://scikit-learn.org/)
+[![spaCy](https://img.shields.io/badge/spaCy-%3E%3D3.0-purple.svg)](https://spacy.io/)
+[![SentenceTransformers](https://img.shields.io/badge/Sentence--Transformers-latest-blueviolet.svg)](https://www.sbert.net/)
+[![Transformers](https://img.shields.io/badge/Transformers-latest-orange.svg)](https://huggingface.co/transformers/)
+[![langdetect](https://img.shields.io/badge/langdetect-latest-lightgrey.svg)](https://pypi.org/project/langdetect/)
+[![Helsinki-NLP](https://img.shields.io/badge/Translation-Helsinki--NLP-red.svg)](https://github.com/Helsinki-NLP/Opus-MT)
 
-# Customer Case ML Project
+# Case Clustering AI: Unsupervised NLP for Support Tickets
 
 ## Intro
 
-This project sets up a Python environment with all of the ML tools needed to analyze and glean insights from datasets like case correspondence from customer support inquiries. The goal is to translate all cases into English, cluster them into similar topics, enrich them with a meaningful resolution code, and create visualizations of the outcomes.
+This project sets up a Python environment with all of the tools needed to cluster and glean insights from datasets like case correspondence from customer support inquiries. The goal is to translate all cases into English and then cluster them into similar topics. From here, these clusters can be reviewed and enriched with meaningful resolution codes that can drive product improvements.
+
+**Sample Output:**
+
+| Cluster  | Support Case Snippet |
+| ------------- | ------------- |
+| 0  | “I can’t find the subscription page in the app…”  |
+| 1  | “The mobile feature crashes on startup…”  |
+| 2  | “How do I reset my password?” |
 
 ## Tools
 
@@ -24,7 +33,8 @@ This project sets up a Python environment with all of the ML tools needed to ana
 * **matplotlib** and **seaborn** for data visualization    
 * **langdetect** for language detection  
 * **Helsinki-NLP** for language translation
-* **scikit-learn** for clustering and other machine learning tasks
+**spaCy** for tokenizing the translated text in preparation for clustering.
+* **scikit-learn** for K-means clustering and other machine learning tasks
 
 ## Installation
 
@@ -37,21 +47,5 @@ This project sets up a Python environment with all of the ML tools needed to ana
 5. **NOTE:** If using VS Code, you may need to restart it before the new environment is available
 6. **Install an English language model for spaCy first by running:**
    `python -m spacy download en_core_web_sm`
-6. **Run `test.ipynb` to confirm everything is working.**
-
-## To-do
-
-### Data Preprocessing
-
-1. add columns to flag missing data
-2. combine free text fields and remove blank space.
-
-### NLP
-
-1. add column for language id (langdetect)
-2. translate to english (spaCy)
-3. generate embeddings (spaCy)
-
-### Clustering
-
-1. Apply clustering algorithm (K-Means) to the embeddings (Scikit-learn)
+7. **Open `notebook.ipynb`. Run the first cell to confirm everything is working.**
+8. **Continue through the notebook.**
