@@ -9,6 +9,7 @@ dependencies:
   - seaborn
   - scikit-learn
   - jupyter
+  - spacy
   - pip
   - pip:
       - sentence-transformers
