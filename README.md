@@ -25,6 +25,12 @@ This project sets up a Python environment with all of the tools needed to cluste
 | 1  | “The mobile feature crashes on startup…”  |
 | 2  | “How do I reset my password?” |
 
+## Architecture
+
+Here is a reference architecture for what this could look like when deployed to production. This architecture covers both batch training and real-time inference flows:
+
+![Architecture Diagram](assets/reference-architecture.png)
+
 ## Tools
 
 * **Conda** for environment setup and reproducibility  
@@ -37,6 +43,8 @@ This project sets up a Python environment with all of the tools needed to cluste
 * **scikit-learn** for K-means clustering and other machine learning tasks
 
 ## Installation
+
+The following steps will allow you to test the end-to-end flow locally:
 
 1. **Install Conda.**
 2. **Clone this repo.**
